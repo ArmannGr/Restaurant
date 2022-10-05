@@ -1,0 +1,38 @@
+.container-sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+mat-sidenav-container{
+    height: 91.5%;
+    width: 100%;
+}
+
+mat-sidenav-content{
+    height: 100%;
+    width: 100%;
+}
+
+mat-sidenav{
+    width: min-content;
+    background-color: #323E40;
+    color: #F28705;
+}
+
+mat-divider{
+    margin: 1rem 0 1rem 0;
+}
+
+button{
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1rem 1rem 0;
+    border-radius: 0;
+}
+
+mat-icon{
+    margin: 0 1rem 0 1rem;
+}
