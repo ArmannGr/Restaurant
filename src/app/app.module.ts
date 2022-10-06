@@ -13,6 +13,9 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {MatCardModule} from "@angular/material/card";
 import { ImprintComponent } from './module/imprint/imprint.component';
+import { DeliveryComponent } from './module/delivery/delivery.component';
+import { MenuComponent } from './module/menu/menu.component';
+import {MatExpansionModule} from "@angular/material/expansion";
 
 
 @NgModule({
@@ -20,7 +23,9 @@ import { ImprintComponent } from './module/imprint/imprint.component';
     AppComponent,
     ToolbarComponent,
     MainComponent,
-    ImprintComponent
+    ImprintComponent,
+    DeliveryComponent,
+    MenuComponent
   ],
     imports: [
         BrowserModule,
@@ -31,7 +36,8 @@ import { ImprintComponent } from './module/imprint/imprint.component';
         MatButtonModule,
         MatSidenavModule,
         MatListModule,
-        MatCardModule
+        MatCardModule,
+        MatExpansionModule
     ],
   providers: [],
   bootstrap: [AppComponent]

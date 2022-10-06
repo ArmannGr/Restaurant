@@ -1,0 +1,26 @@
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F28705;
+    height: 100%;
+    background-color: #F28705;
+}
+
+.pizza-card{
+    width: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 1500px;
+    background-color: #2b3638;
+}
+
+.header{
+    background: #323E40;
+    text-align: center;
+    max-width: 1000px;
+    color: #F28705;
+}
