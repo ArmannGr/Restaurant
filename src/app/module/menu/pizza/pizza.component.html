@@ -1,0 +1,17 @@
+
+<mat-accordion class="example-headers-align">
+        <mat-expansion-panel *ngFor="let pizza of pizzas">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{pizza.position}}. {{pizza.name}}
+                </mat-panel-title>
+                <mat-panel-description>
+                    {{pizza.priceLittle}}
+                    {{pizza.price}}
+                    {{pizza.priceJumbo}}
+                    {{pizza.priceBig}}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            {{pizza.info}}
+        </mat-expansion-panel>
+</mat-accordion>

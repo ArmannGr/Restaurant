@@ -1,0 +1,12 @@
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+mat-panel-title{
+    justify-content: space-between;
+}
+
+mat-panel-description{
+    justify-content: space-between;
+}
