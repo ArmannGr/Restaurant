@@ -16,17 +16,19 @@ import { ImprintComponent } from './module/imprint/imprint.component';
 import { DeliveryComponent } from './module/delivery/delivery.component';
 import { MenuComponent } from './module/menu/menu.component';
 import {MatExpansionModule} from "@angular/material/expansion";
+import {PizzaComponent} from "./module/menu/pizza/pizza.component";
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ToolbarComponent,
-    MainComponent,
-    ImprintComponent,
-    DeliveryComponent,
-    MenuComponent
-  ],
+    declarations: [
+        AppComponent,
+        ToolbarComponent,
+        MainComponent,
+        ImprintComponent,
+        DeliveryComponent,
+        MenuComponent,
+        PizzaComponent
+    ],
     imports: [
         BrowserModule,
         AppRoutingModule,
