@@ -1,0 +1,58 @@
+
+<!--<mat-accordion class="example-headers-align">
+    <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Pizza
+            </mat-panel-title>
+            <mat-panel-description>
+                Klein
+                Groß
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+        <mat-expansion-panel *ngFor="let pizza of pizzas">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{pizza.position}}. {{pizza.name}}
+                </mat-panel-title>
+                <mat-panel-description>
+                    {{pizza.priceLittle}}
+                    {{pizza.price}}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            {{pizza.info}}
+        </mat-expansion-panel>
+</mat-accordion>-->
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h5>Salate - Insalata</h5>
+            </div>
+            <div class="col-4">
+                <h5 class="size">Preis</h5>
+            </div>
+        </div>
+    </div>
+    <div class="oneMeal" *ngFor="let element of elements">
+        <div class="container">
+            <div class="row">
+                <div class="name col-8">
+                    <h4>{{element.position}}. {{element.name}}</h4>
+                </div>
+                <div class="col-4">
+                    <h5 class="h5">{{element.price}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <h5 class="element">{{element.info}}</h5>
+            </div>
+            <div class="nutrientDistance row" *ngIf="element.nutrient">
+                <h6 class="nutrient">Allergene: {{element.nutrient}}</h6>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>

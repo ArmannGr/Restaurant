@@ -14,5 +14,6 @@ mat-card{
 
 mat-card-subtitle{
     color: #F28705;
+    font-weight: lighter;
 }
 

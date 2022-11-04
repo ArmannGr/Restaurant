@@ -17,6 +17,7 @@ import { DeliveryComponent } from './module/delivery/delivery.component';
 import { MenuComponent } from './module/menu/menu.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import {PizzaComponent} from "./module/menu/pizza/pizza.component";
+import { SaladComponent } from './module/menu/salad/salad.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {PizzaComponent} from "./module/menu/pizza/pizza.component";
         ImprintComponent,
         DeliveryComponent,
         MenuComponent,
-        PizzaComponent
+        PizzaComponent,
+        SaladComponent
     ],
     imports: [
         BrowserModule,
