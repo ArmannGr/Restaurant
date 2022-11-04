@@ -35,7 +35,7 @@ const Pizza: PeriodicElement[] = [
   {position: '18', name: 'Scampi', priceLittle: '6,50', price: '9,50', priceJumbo: '14,00', priceBig: '25,00', info: 'mit Crevetten' , nutrient: 'A, F'},
   {position: '19', name: 'Mais', priceLittle: '5,00', price: '6,50', priceJumbo: '12,00', priceBig: '22,00', info: 'mit Mais' , nutrient: 'A'},
   {position: '20', name: 'Calzone', priceLittle: '5,50', price: '', priceJumbo: '', priceBig: '', info: 'gefüllt mit Salami, Formfleisch-Vorderschinken und Champignons' , nutrient: 'A, 1, 2, 5'},
-  {position: '21', name: 'Calzone Ringenberg', priceLittle: '6,50', price: '', priceJumbo: '', priceBig: '', info: 'gefüllt mit Salami, Formfleisch-Vorderschinken, Thunfisch und Ei' , nutrient: 'A, 1, 2, 5, C, B'},
+  {position: '21', name: 'Calz. Ringenberg', priceLittle: '6,50', price: '', priceJumbo: '', priceBig: '', info: 'gefüllt mit Salami, Formfleisch-Vorderschinken, Thunfisch und Ei' , nutrient: 'A, 1, 2, 5, C, B'},
   {position: '22', name: 'Tonno e Cipolla', priceLittle: '6,00', price: '8,00', priceJumbo: '14,00', priceBig: '24,00', info: 'mit Thunfisch und Zwiebeln' , nutrient: 'A, C'},
   {position: '23', name: 'Peperoni', priceLittle: '5,00', price: '6,00', priceJumbo: '11,00', priceBig: '22,00', info: 'mit scharfe und milde Peperoni' , nutrient: 'A'},
   {position: '24', name: 'Romana', priceLittle: '5,50', price: '8,00', priceJumbo: '12,00', priceBig: '24,00', info: 'mit Bolognese, Zwiebeln und Ei' , nutrient: 'A, B'},
@@ -57,7 +57,7 @@ const Pizza: PeriodicElement[] = [
   {position: '41', name: 'Pecorino', priceLittle: '6,00', price: '8,00', priceJumbo: '14,00', priceBig: '24,00', info: 'mit frischen Tomaten, Schafskäse und scharfe Peperoni' , nutrient: 'A, D'},
   {position: '42', name: 'Gorgonzola', priceLittle: '6,00', price: '8,00', priceJumbo: '14,00', priceBig: '24,00', info: 'mit Formfleisch-Vorderschinken und Gorgonzola' , nutrient: 'A, 2, 5, D'},
   {position: '43', name: 'Vegetaria', priceLittle: '6,50', price: '9,50', priceJumbo: '14,00', priceBig: '25,00', info: 'mit Broccoli, Champignons, Paprika und Spinat' , nutrient: 'A, D'},
-  {position: '44', name: 'Tomaten-Mozzarella', priceLittle: '6,00', price: '8,00', priceJumbo: '14,00', priceBig: '24,00', info: 'mit frischen Tomaten und Mozzarella' , nutrient: 'A, D'},
+  {position: '44', name: 'Tom.-Mozzarella', priceLittle: '6,00', price: '8,00', priceJumbo: '14,00', priceBig: '24,00', info: 'mit frischen Tomaten und Mozzarella' , nutrient: 'A, D'},
   {position: '45', name: 'Gyros', priceLittle: '6,50', price: '9,00', priceJumbo: '15,00', priceBig: '25,00', info: 'mit Schweinefleisch, Zwiebeln und Tzatziki' , nutrient: 'A'},
   {position: '45a', name: 'Chicken', priceLittle: '6,50', price: '9,00', priceJumbo: '14,00', priceBig: '25,00', info: 'mit Hähnchenfleisch und Zwiebeln' , nutrient: 'A'},
   {position: '45b', name: 'New York', priceLittle: '6,50', price: '9,00', priceJumbo: '15,00', priceBig: '26,00', info: 'mit Broccoli, Hähnchenbrust und Sauce-Hollandaise' , nutrient: 'A, B, D, H'},
@@ -73,7 +73,7 @@ const Pizza: PeriodicElement[] = [
   styleUrls: ['./pizza.component.css']
 })
 export class PizzaComponent implements OnInit {
-  pizzas = Pizza;
+  elements = Pizza;
 
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
   constructor() { }

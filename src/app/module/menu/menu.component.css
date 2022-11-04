@@ -7,10 +7,12 @@
     height: 100%;
 }
 
-mat-expansion-panel{
+mat-card{
     background-color: #2b3638;
-}
-
-mat-panel-title{
     color: #F28705;
 }
+
+mat-card-subtitle{
+    color: #F28705;
+}
+

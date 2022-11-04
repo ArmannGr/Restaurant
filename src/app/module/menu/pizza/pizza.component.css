@@ -10,3 +10,89 @@ mat-panel-title{
 mat-panel-description{
     justify-content: space-between;
 }
+
+mat-panel-title{
+    min-width: 160px;
+}
+
+.pizza{
+    display: flex;
+    height: 20px;
+}
+
+.pizzaName{
+    display: flex;
+    color: #F28705;
+    margin: 0%;
+    height: 10px;
+}
+
+
+price{
+    width: 35%;
+    height: 10px;
+    display: flex;
+}
+
+.h5{
+    display: inline-block;
+    justify-content: space-between;
+    width: 25%;
+}
+
+info{
+    display: inline-block;
+}
+
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.6em;
+}
+
+.onePizza{
+    color: #F28705;
+}
+
+.sizeHeader{
+    display: flex;
+}
+
+.size{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.size2{
+    display: flex;
+    width: 95%;
+}
+
+.pizzaSize{
+    display: inline-block;
+    justify-content: space-between;
+    width: 25%;
+}
+
+
+sup{
+    font-size: 6px;
+}
+
+.row{
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.nutrientDistance{
+    margin-top: -19px;
+    margin-bottom: -10px;
+}
+
+.nutrient{
+    font-weight: lighter;
+}
+
+.element{
+    font-weight: lighter;
+}
