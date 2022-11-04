@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h5>Pizzabrötchen und Brot</h5>
+            </div>
+            <div class="col-2">
+                <h5 class="size">Preis</h5>
+            </div>
+        </div>
+    </div>
+    <div class="oneMeal" *ngFor="let element of elements">
+        <div class="container">
+            <div class="row">
+                <div class="name col-10">
+                    <h4>{{element.position}} {{element.name}}</h4>
+                </div>
+                <div class="col-2">
+                    <h5 class="h5">{{element.price}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <h5 class="element">{{element.info}}</h5>
+            </div>
+            <div class="nutrientDistance row" *ngIf="element.nutrient">
+                <h6 class="nutrient">Allergene: {{element.nutrient}}</h6>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>

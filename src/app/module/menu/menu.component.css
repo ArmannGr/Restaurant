@@ -4,6 +4,7 @@
 
 .main{
     background-color: #F28705;
+    color: #F28705;
     height: 100%;
 }
 
@@ -16,4 +17,3 @@ mat-card-subtitle{
     color: #F28705;
     font-weight: lighter;
 }
-

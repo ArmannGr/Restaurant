@@ -3,23 +3,17 @@
 
     <mat-sidenav-container>
         <mat-sidenav #sidenav mode="over">
-            <button mat-button routerLink="main" (click)="sidenav.close()">
+            <button mat-button routerLink="menu" (click)="sidenav.close()">
                 <mat-icon mat-list-icon>
-                    home
+                    menu_book
                 </mat-icon>
-                Start
+                Menü
             </button>
             <button mat-button routerLink="imprint" (click)="sidenav.close()">
                 <mat-icon mat-list-icon>
                     storefront
                 </mat-icon>
                 Impressum
-            </button>
-            <button mat-button routerLink="menu" (click)="sidenav.close()">
-                <mat-icon mat-list-icon>
-                    menu_book
-                </mat-icon>
-                Menü
             </button>
             <button mat-button routerLink="delivery" (click)="sidenav.close()">
                 <mat-icon mat-list-icon>
