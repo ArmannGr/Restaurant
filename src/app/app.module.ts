@@ -2,12 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from './layout/toolbar/toolbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './module/main/main.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
@@ -34,12 +32,13 @@ import { SnackComponent } from './module/menu/snack/snack.component';
 import { BreadComponent } from './module/menu/bread/bread.component';
 import { DrinkComponent } from './module/menu/drink/drink.component';
 import { NutrientComponent } from './module/menu/nutrient/nutrient.component';
+import {DialogHelloComponent} from "./module/dialog/dialog-hello/dialog-hello.component";
+import {MatDialogModule} from "@angular/material/dialog";
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        ToolbarComponent,
         MainComponent,
         ImprintComponent,
         DeliveryComponent,
@@ -61,19 +60,20 @@ import { NutrientComponent } from './module/menu/nutrient/nutrient.component';
         SnackComponent,
         BreadComponent,
         DrinkComponent,
-        NutrientComponent
+        NutrientComponent,
+        DialogHelloComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         MatToolbarModule,
-        MatIconModule,
         MatButtonModule,
         MatSidenavModule,
         MatListModule,
         MatCardModule,
-        MatExpansionModule
+        MatExpansionModule,
+        MatDialogModule
     ],
   providers: [],
   bootstrap: [AppComponent]

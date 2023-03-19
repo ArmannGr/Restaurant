@@ -1,29 +1,3 @@
 <div class="container-sidebar">
-<app-toolbar (clickMenu)="sidenav.toggle()"></app-toolbar>
-
-    <mat-sidenav-container>
-        <mat-sidenav #sidenav mode="over">
-            <button mat-button routerLink="menu" (click)="sidenav.close()">
-                <mat-icon mat-list-icon>
-                    menu_book
-                </mat-icon>
-                Menü
-            </button>
-            <button mat-button routerLink="imprint" (click)="sidenav.close()">
-                <mat-icon mat-list-icon>
-                    storefront
-                </mat-icon>
-                Impressum
-            </button>
-            <button mat-button routerLink="delivery" (click)="sidenav.close()">
-                <mat-icon mat-list-icon>
-                    local_taxi
-                </mat-icon>
-                Lieferinformation
-            </button>
-        </mat-sidenav>
-        <mat-sidenav-content>
             <router-outlet></router-outlet>
-        </mat-sidenav-content>
-    </mat-sidenav-container>
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DialogHelloComponent} from "../dialog/dialog-hello/dialog-hello.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-menu',
@@ -8,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
+    this.openDialogHello();
+  }
+
+  openDialogHello(): void{
+    const dialogRef = this.dialog.open(DialogHelloComponent);
+
   }
 
 }
