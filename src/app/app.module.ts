@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './module/main/main.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
@@ -68,7 +67,6 @@ import { NutrientComponent } from './module/menu/nutrient/nutrient.component';
         AppRoutingModule,
         BrowserAnimationsModule,
         MatToolbarModule,
-        MatIconModule,
         MatButtonModule,
         MatSidenavModule,
         MatListModule,

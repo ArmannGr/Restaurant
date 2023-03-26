@@ -4,21 +4,21 @@
     <mat-sidenav-container>
         <mat-sidenav #sidenav mode="over">
             <button mat-button routerLink="menu" (click)="sidenav.close()">
-                <mat-icon mat-list-icon>
+                <span mat-list-icon class="material-icons">
                     menu_book
-                </mat-icon>
+                </span>
                 Menü
             </button>
             <button mat-button routerLink="imprint" (click)="sidenav.close()">
-                <mat-icon mat-list-icon>
+                <span mat-list-icon class="material-icons">
                     storefront
-                </mat-icon>
+                </span>
                 Impressum
             </button>
             <button mat-button routerLink="delivery" (click)="sidenav.close()">
-                <mat-icon mat-list-icon>
+                <span mat-list-icon class="material-icons">
                     local_taxi
-                </mat-icon>
+                </span>
                 Lieferinformation
             </button>
         </mat-sidenav>
