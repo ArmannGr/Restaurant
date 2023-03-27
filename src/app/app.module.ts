@@ -33,6 +33,7 @@ import { SnackComponent } from './module/menu/snack/snack.component';
 import { BreadComponent } from './module/menu/bread/bread.component';
 import { DrinkComponent } from './module/menu/drink/drink.component';
 import { NutrientComponent } from './module/menu/nutrient/nutrient.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -73,7 +74,7 @@ import { NutrientComponent } from './module/menu/nutrient/nutrient.component';
         MatCardModule,
         MatExpansionModule
     ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
