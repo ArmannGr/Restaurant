@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ToolbarComponent } from './layout/toolbar/toolbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './module/main/main.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -32,13 +33,13 @@ import { SnackComponent } from './module/menu/snack/snack.component';
 import { BreadComponent } from './module/menu/bread/bread.component';
 import { DrinkComponent } from './module/menu/drink/drink.component';
 import { NutrientComponent } from './module/menu/nutrient/nutrient.component';
-import {DialogHelloComponent} from "./module/dialog/dialog-hello/dialog-hello.component";
-import {MatDialogModule} from "@angular/material/dialog";
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
     declarations: [
         AppComponent,
+        ToolbarComponent,
         MainComponent,
         ImprintComponent,
         DeliveryComponent,
@@ -60,8 +61,7 @@ import {MatDialogModule} from "@angular/material/dialog";
         SnackComponent,
         BreadComponent,
         DrinkComponent,
-        NutrientComponent,
-        DialogHelloComponent
+        NutrientComponent
     ],
     imports: [
         BrowserModule,
@@ -72,10 +72,9 @@ import {MatDialogModule} from "@angular/material/dialog";
         MatSidenavModule,
         MatListModule,
         MatCardModule,
-        MatExpansionModule,
-        MatDialogModule
+        MatExpansionModule
     ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

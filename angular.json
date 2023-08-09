@@ -96,6 +96,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Restaurant:build:production",
+            "firebaseProject": "pizzeria-grewal",
+            "firebaseHostingSite": "pizzeria-grewal"
+          }
         }
       }
     }
